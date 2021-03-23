@@ -1,0 +1,64 @@
+*,
+:after,
+:before {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+}
+
+body {
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: center;
+    line-height: 1.5;
+    background-image: linear-gradient(#615dad, #ffc8da);
+    padding-top: 70px;
+}
+
+.intro {
+    background-color: #283e50;
+    width: 370px;
+    border-radius: 7px 7px 0 0;
+}
+
+.intro_foto {
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+
+.intro_title {
+    font-family: 'Lobster', cursive;
+    font-weight: 500;
+    font-size: 3em;
+    margin: 25px 0;
+}
+
+.intro_text {
+    margin: 0px 15px 35px 15px;
+}
+
+.intro_button {
+    text-decoration: none;
+    color: #ffffff;
+    display: inline-block;
+    margin-top: 0.3%;
+    padding: 15px 100px;
+}
+
+.pravidla {
+    background-color: #1fcca4;
+}
+
+.zacit_hrat {
+    background-color: #0197f6;
+}
+
+.pravidla:hover {
+    background-color: #1cbb96;
+}
+
+.zacit_hrat:hover {
+    background-color: #0090e9;
+}
