@@ -11,22 +11,20 @@ html {
 body {
     color: #ffffff;
     font-family: sans-serif;
-    text-align: center;
     line-height: 1.5;
     background-image: linear-gradient(#615dad, #ffc8da);
     padding-top: 70px;
+    padding-bottom: 70px;
     display: flex;
-    justify-content: center
-    ;
-    
+    justify-content: center;
 }
 
-.intro {
+.intro,
+.rules {
     background-color: #283e50;
     width: 370px;
+    text-align: center;
     border-radius: 7px 7px 0 0;
-    
-    
 }
 
 .intro_foto {
@@ -34,7 +32,7 @@ body {
     border-radius: 7px 7px 0 0;
 }
 
-.intro_title {
+h1 {
     font-family: 'Lobster', cursive;
     font-weight: 500;
     font-size: 3em;
@@ -49,22 +47,80 @@ body {
     text-decoration: none;
     color: #ffffff;
     display: block;
-    margin-top: 0.3%;
     padding: 15px 100px;
 }
 
-.pravidla {
+.pravidla_button,
+.uvodni_stranka {
     background-color: #1fcca4;
+    border-bottom: 1px solid #283e50;
 }
 
-.zacit_hrat {
+.zacit_hrat_button {
     background-color: #0197f6;
 }
 
-.pravidla:hover {
+.pravidla_button:hover,
+.uvodni_stranka:hover {
     background-color: #1cbb96;
 }
 
-.zacit_hrat:hover {
+.zacit_hrat_button:hover {
     background-color: #0090e9;
+}
+
+.rules h1 {
+    padding-top: 10px;
+}
+
+.rules__list {
+    text-align: left;
+    padding-left: 75px;
+    padding-right: 55px;
+}
+
+.rules__list li {
+    padding-left: 0.5em;
+    line-height: 1.2;
+    padding-bottom: 0.9em;
+}
+
+li img {
+    filter: invert(100%);
+    height: 1em;
+}
+
+.rules__images {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+.rules__images figure {
+    margin: 20px 30px;
+}
+
+.rules__images img {
+    width: 100%;
+}
+
+.rules__images figcaption {
+    line-height: 1.3;
+    margin-top: 5px;
+    font-style: italic;
+}
+
+@media screen and (min-width: 800px) {
+    .rules {
+        width: 700px;
+    }
+
+    .rules__images {
+        justify-content: space-evenly;
+    }
+
+    .rules__images figure {
+        margin: 20px 0;
+        flex-basis: 41%;
+    }
 }
