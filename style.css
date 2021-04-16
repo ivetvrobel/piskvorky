@@ -124,3 +124,102 @@ li img {
         flex-basis: 41%;
     }
 }
+
+/* 3. úkol */
+
+
+.game {
+    max-width: 80vmin;
+}
+
+/* Název*/
+
+.game__title {
+    text-align: center;
+    margin: 0;
+    font-size: 3em;
+    padding-bottom: 10px;
+}
+
+/* Hráč */
+
+.game__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+
+.game__header__player {
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.game__header p {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.game__header__player img {
+    filter: invert(100%);
+    height: 1em;
+}
+
+/* Tlačítka/odkazy */
+
+.game__header__links {
+    display: flex;
+}
+
+.game__header__links a {
+    text-decoration: none;
+    display: flex;
+    padding: 6px;
+    margin: 2px;
+    height: 40px;
+    width: 40px;
+    border-radius: 4px;
+}
+
+.game__header__links img {
+    max-width: 100%;
+}
+
+.button__home {
+    background-color: #1fcca4;
+}
+
+.button__restart {
+    background-color: #0197f6;
+}
+
+.button__home:hover {
+    background-color: #1cbb96;
+}
+
+.button__restart:hover {
+    background-color: #0090e9;
+}
+
+/* Hrací plocha */
+
+.game__board {
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px solid black;
+    min-width: 150px;
+}
+
+.game__board button {
+    flex: 1 1 10%;
+
+    aspect-ratio: 1 / 1;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid black;
+}
+
+.game__board button:focus,
+.game__board button:hover {
+    background-color: rgba(255, 255, 255, 0.4);
+}
