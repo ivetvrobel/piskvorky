@@ -19,6 +19,10 @@ body {
     justify-content: center;
 }
 
+.intro {
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+}
+
 .intro,
 .rules {
     background-color: #283e50;
@@ -67,6 +71,10 @@ h1 {
 
 .zacit_hrat_button:hover {
     background-color: #0090e9;
+}
+
+.rules {
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
 }
 
 .rules h1 {
@@ -121,7 +129,7 @@ li img {
 
     .rules__images figure {
         margin: 20px 0;
-        flex-basis: 41%;
+        flex-basis: calc((100% - 100px) / 2);
     }
 }
 
@@ -157,12 +165,13 @@ li img {
 
 .game__header p {
     font-weight: bold;
+    font-size: 1.5em;
     margin-right: 5px;
 }
 
 .game__header__player img {
     filter: invert(100%);
-    height: 1em;
+    height: 1.5em;
 }
 
 /* Tlačítka/odkazy */
@@ -208,6 +217,7 @@ li img {
     flex-wrap: wrap;
     border: 1px solid black;
     min-width: 150px;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
 }
 
 .game__board button {
@@ -221,4 +231,33 @@ li img {
 .game__board button:focus,
 .game__board button:hover {
     background-color: rgba(255, 255, 255, 0.4);
+    cursor: pointer;
+}
+
+/* 4. úkol */
+
+@keyframes popout {
+    from {
+        background-size: 0%;
+    }
+
+    to {
+        background-size: 65%;
+    }
+}
+
+.board__field--circle {
+    background-image: url(images/circle.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    animation: popout 0.15s;
+}
+
+.board__field--cross {
+    background-image: url(images/cross.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 65%;
+    animation: popout 0.15s;
 }
